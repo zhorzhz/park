@@ -1,0 +1,72 @@
+Index: stylesheet/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n/* Container holding the image and the text */\r\n\r\n.container {\r\nposition: relative;\r\ntext-align: center;\r\ncolor: black;\r\n}\r\n\r\n/* Top left text */\r\n.top-left {\r\nposition: absolute;\r\ntop: 8px;\r\nleft: 16px;\r\n}\r\n\r\n.form-all {\r\nfloat: left;\r\n/* Container holding the image and the text */\r\n\r\n.container {\r\n    position: relative;\r\n    text-align: center;\r\n    color: black;\r\n    }\r\n\r\n    /* Top left text */\r\n    .top-left {\r\n    position: absolute;\r\n    top: 8px;\r\n    left: 16px;\r\n    }\r\n\r\n    .form-all {\r\n    float: left;\r\n    }\r\n\r\n\r\n\r\n/* body part */\r\nbody{\r\n    margin:0;\r\n    padding: 0;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    line-height: 1.5em;\r\n}\r\n\r\n\r\n/* grid */\r\n#site_wrap{\r\n    background-color: antiquewhite;\r\n    height:100vh;\r\n    display: grid;\r\n\r\n    /* 6 columns */\r\n    grid-template-columns:\r\n    1fr\r\n    repeat(4,minmax(0,272px))\r\n    1fr;\r\n    grid-gap:0px;\r\n\r\n    /* rows */\r\n    grid-template-rows:\r\n        /* header */\r\n        104px\r\n        /* banner */\r\n        605px\r\n        /* rides */\r\n        min-content\r\n        /* footer */\r\n        1fr\r\n        ;\r\n\r\n    grid-template-areas:\r\n        \"header header header header header header\"\r\n        \"featured_header featured_header featured_header featured_header featured_header featured_header\"\r\n        \". featured_main featured_main featured_main featured_main .\"\r\n        \"footer footer footer footer footer footer\"\r\n    ;\r\n}\r\n\r\n\r\n/* flexbox */\r\n.box-area{\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.single-box{\r\n    position: relative;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    width: 400px;\r\n    height: auto;\r\n    border-radius: 4px;\r\n    text-align: center;\r\n    background-color:azure;\r\n    margin: 20px;\r\n    padding: 20px;\r\n    transition: .3s;\r\n}\r\n.img-area{\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 400px;\r\n    height: 200px;\r\n    margin-bottom: 10px;\r\n    padding: 20px;\r\n    background-size: cover;\r\n    background-position: center center;\r\n}\r\n.single-box:nth-child(1) .img-area{\r\n    background-image: url(../images/ride1.jpg);\r\n}\r\n.single-box:nth-child(2) .img-area{\r\n    background-image: url(../images/ride2.jpg);\r\n}\r\n.single-box:nth-child(3) .img-area{\r\n    background-image: url(../images/ride3.jpg);\r\n}\r\n.single-box:nth-child(4) .img-area{\r\n    background-image: url(../images/ride4.jpg);\r\n}\r\n.header-text{\r\n    font-size: 30px;\r\n    font-weight: 500;\r\n    line-height: 48px;\r\n}\r\n.img-text{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    padding-top: 20px;\r\n}\r\n.img-text p{\r\n    font-size: 20px;\r\n    font-weight: 400;\r\n    line-height: 30px;\r\n}\r\n.single-box:hover{\r\n    background: grey;\r\n    color: white;\r\n}\r\n/* end of flexbox */\r\n\r\n\r\n\r\n\r\n/* header */\r\n.header{\r\n    background-color: peru;\r\n    grid-area:header\r\n}\r\n/* banner image */\r\n.featured_header{\r\n    background-image: url('../images/carousel/1.jpg');\r\n    grid-area:featured_header;\r\n    background-size: cover;\r\n}\r\n\r\n/* banner text */\r\n.featured_header h1{\r\n    color: white;\r\n    display: flex;\r\n    font-size: 50px;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.featured_header p{\r\n    color: white;\r\n    display: flex;\r\n    font-size: 25px;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n/* rides */\r\n.featured_main{\r\n    background-color: grey;\r\n    padding: 2em 0;\r\n    grid-area:featured_main\r\n}\r\n\r\n/* footer */\r\n.footer{\r\n    background-color: rgb(31, 65, 65);\r\n    grid-area:footer\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/stylesheet/style.css b/stylesheet/style.css
+--- a/stylesheet/style.css	(revision 4fe73b3bd45323479c2a9e9fa11b658d860279a4)
++++ b/stylesheet/style.css	(date 1607279198675)
+@@ -15,7 +15,8 @@
+ }
+ 
+ .form-all {
+-float: left;
++    float: left;
++}
+ /* Container holding the image and the text */
+ 
+ .container {
+@@ -62,7 +63,7 @@
+     /* rows */
+     grid-template-rows:
+         /* header */
+-        104px
++        200px
+         /* banner */
+         605px
+         /* rides */
+@@ -151,7 +152,7 @@
+ /* header */
+ .header{
+     background-color: peru;
+-    grid-area:header
++    grid-area:header;
+ }
+ /* banner image */
+ .featured_header{
+@@ -180,11 +181,11 @@
+ .featured_main{
+     background-color: grey;
+     padding: 2em 0;
+-    grid-area:featured_main
++    grid-area:featured_main;
+ }
+ 
+ /* footer */
+ .footer{
+     background-color: rgb(31, 65, 65);
+-    grid-area:footer
++    grid-area:footer;
+ }
+\ No newline at end of file
+Index: attractions.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <title>Filmopolis Attractions</title>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css\" integrity=\"sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2\" crossorigin=\"anonymous\">\r\n    <link rel=\"stylesheet\" href=\"stylesheet/style.css\">\r\n</head>\r\n\r\n\r\n<body>\r\n\r\n<div id=\"site_wrap\">\r\n\r\n    <!-- header -->\r\n    <header class=\"header\">\r\n        <a href=\"index.html\"><img src=\"images/parkLogo.png\" alt=\"Themepark Logo\" width=\"200\" height=\"100\"></a> \r\n        <ul>\r\n            <li><a href=\"index.html\">Home</a></li>\r\n            <li><a href=\"attractions.html\">Rides</a></li>\r\n            <li><a href=\"info.html\">Tickets</a></li>\r\n            <li><a href=\"info.html\">Book Now</a></li>\r\n        </ul>\r\n    </header>\r\n    <!-- end of header -->\r\n\r\n\r\n    <!-- main content here -->\r\n\r\n    <!-- banner -->\r\n    <div class=\"featured_header\">\r\n        <h1>Rides & Attractions</h1>\r\n        <p>Explore things to do at Filmopolis!</p>\r\n    </div>\r\n    <!-- end of banner -->\r\n\r\n    <!-- rides -->\r\n     <div class=\"featured_main\">\r\n            <!-- flexbox items * 4 -->\r\n            <div class=\"box-area\">\r\n\r\n                <div class=\"single-box\">\r\n                    <div class=\"img-area\"></div>\r\n                    <div class=\"img-text\">\r\n                        <span class=\"header-text\"><strong>The Last Jedi</strong></span>\r\n                        <p>Take a journey through hyperspace with the Resistance</p>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"single-box\">\r\n                    <div class=\"img-area\"></div>\r\n                    <div class=\"img-text\">\r\n                        <span class=\"header-text\"><strong>Avatar World</strong></span>\r\n                        <p>Follow the Na'vi and hop aboard for a family-friendly ride</p>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"single-box\">\r\n                    <div class=\"img-area\"></div>\r\n                    <div class=\"img-text\">\r\n                        <span class=\"header-text\"><strong>Hogwarts Express</strong></span>\r\n                        <p>A magical adventure discovering the wizarding world</p>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"single-box\">\r\n                    <div class=\"img-area\"></div>\r\n                    <div class=\"img-text\">\r\n                        <span class=\"header-text\"><strong>Star Wars VR Show</strong></span>\r\n                        <p>Meet and greet your favourite Star Wars character and enjoy live VR shows</p>\r\n                    </div>\r\n                </div>\r\n\r\n            </div>\r\n\r\n    </div>\r\n    <!-- end of rides -->\r\n\r\n\r\n    <!-- footer -->\r\n    <footer class=\"footer\">\r\n        <ul>\r\n            <li><a href=\"info.html\">About Us</a></li>\r\n            <li><a href=\"index.html\">Careers</a></li>\r\n            <li><a href=\"index.html\">Policy</a></li>\r\n            <li><a href=\"http://www.facebook.com\" target=\"_blank\"><img src=\"images/facebook.png\" alt=\"Facebook Logo\" width=\"50px\" height=\"50px\"></a></li>\r\n            <li><a href=\"http://www.instagram.com\" target=\"_blank\"><img src=\"images/instagram.png\" alt=\"Instagram Logo\" width=\"50px\" height=\"50px\"></a></li>\r\n            <li><a href=\"http://www.twitter.com\" target=\"_blank\"><img src=\"images/twitter.png\" alt=\"Twitter Logo\" width=\"50px\" height=\"50px\"></a></li>\r\n        </ul>\r\n    </footer>\r\n    <!-- end of footer -->\r\n\r\n</div>\r\n\r\n\r\n<script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\" crossorigin=\"anonymous\"></script>\r\n\r\n\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/attractions.html b/attractions.html
+--- a/attractions.html	(revision 4fe73b3bd45323479c2a9e9fa11b658d860279a4)
++++ b/attractions.html	(date 1607279277325)
+@@ -16,7 +16,7 @@
+ 
+     <!-- header -->
+     <header class="header">
+-        <a href="index.html"><img src="images/parkLogo.png" alt="Themepark Logo" width="200" height="100"></a> 
++        <a href="index.html"><img src="images/parkLogo.png" alt="Themepark Logo" width="200" height="100"></a>
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="attractions.html">Rides</a></li>
