@@ -5,14 +5,14 @@
     text-align: center;
     color: black;
     }
-    
+
     /* Top left text */
     .top-left {
     position: absolute;
     top: 8px;
     left: 16px;
     }
-    
+
     .form-all {
     float: left;
     }
@@ -35,14 +35,14 @@ body{
     display: grid;
 
     /* 6 columns */
-    grid-template-columns: 
+    grid-template-columns:
     1fr
     repeat(4,minmax(0,272px))
     1fr;
     grid-gap:0px;
 
     /* rows */
-    grid-template-rows: 
+    grid-template-rows:
         /* header */
         104px
         /* banner */
@@ -52,8 +52,8 @@ body{
         /* footer */
         1fr
         ;
-    
-    grid-template-areas: 
+
+    grid-template-areas:
         "header header header header header header"
         "featured_header featured_header featured_header featured_header featured_header featured_header"
         ". featured_main featured_main featured_main featured_main ."
