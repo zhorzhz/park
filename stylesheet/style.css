@@ -44,7 +44,7 @@ body{
     /* rows */
     grid-template-rows:
         /* header */
-        104px
+        200px
         /* banner */
         605px
         /* rides */

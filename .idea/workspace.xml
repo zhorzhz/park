@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cf3e378-4ad6-4885-a4b4-2612d7f119bd" name="Default Changelist" comment="Added class=&quot;header&quot; back in and the sitewrapper div." />
-    <list id="3a742312-51d3-4e3e-81c9-74de8a061518" name="Revert &quot;Add files via upload&quot;" comment="Revert &quot;Add files via upload&quot;&#10;&#10;This reverts commit 191dc7d2" />
-    <list id="b30ff296-fcb5-488b-90bc-b6b4acb13bda" name="Revert &quot;Add files via upload&quot;-2" comment="Revert &quot;Add files via upload&quot;&#10;&#10;This reverts commit 4e77793b" />
+    <list default="true" id="7cf3e378-4ad6-4885-a4b4-2612d7f119bd" name="Default Changelist" comment="Reverting back to Jen's upload">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attractions.html" beforeDir="false" afterPath="$PROJECT_DIR$/attractions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +39,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="Push.Settings">
+    <option name="SHOW_DETAILS_PANEL" value="false" />
+  </component>
   <component name="RunManager">
     <configuration name="attractions.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/park/attractions.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -64,7 +69,7 @@
       <workItem from="1607245877412" duration="3851000" />
       <workItem from="1607266374115" duration="2246000" />
       <workItem from="1607268687485" duration="33000" />
-      <workItem from="1607268857014" duration="10997000" />
+      <workItem from="1607268857014" duration="11976000" />
     </task>
     <task id="LOCAL-00001" summary="Removed debug.log added by vs code.">
       <created>1607204581745</created>
@@ -80,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607275192111</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Reverting back to Jen's upload">
+      <created>1607283779547</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607283779547</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +160,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Removed debug.log added by vs code." />
     <MESSAGE value="Added class=&quot;header&quot; back in and the sitewrapper div." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added class=&quot;header&quot; back in and the sitewrapper div." />
+    <MESSAGE value="Reverting back to Jen's upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverting back to Jen's upload" />
   </component>
 </project>
