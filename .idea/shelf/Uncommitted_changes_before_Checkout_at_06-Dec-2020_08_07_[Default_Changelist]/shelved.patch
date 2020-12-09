@@ -1,0 +1,34 @@
+Index: attractions.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Filmopolis Attractions</title>\r\n<!-- link css -->\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\"/>\r\n    \r\n</head>\r\n\r\n\r\n<body>\r\n<div id=\"site_wrap\">\r\n\r\n    <!-- header -->\r\n    <div class=\"header\">\r\n        header\r\n    </div> \r\n    <!-- end of header -->\r\n\r\n    \r\n    <!-- main content here -->\r\n    <!-- banner -->\r\n    <div class=\"featured_header\">\r\n        <h1>Rides & Attractions</h1> \r\n        <p>Explore things to do at Filmpolis!</p>\r\n    </div>\r\n    <!-- end of banner -->\r\n\r\n\r\n    <!-- rides -->\r\n    <div class=\"featured_main\">\r\n        <!-- flexbox items * 4 -->\r\n            <div class=\"box-area\">\r\n                <div class=\"single-box\">\r\n                <div class=\"img-area\"></div>\r\n                <div class=\"img-text\">\r\n                    <span class=\"header-text\"><strong>The Last Jedi</strong></span>\r\n                    <p>Take a journey through hyperspace with the Resistance</p>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"single-box\">\r\n                <div class=\"img-area\"></div>\r\n                <div class=\"img-text\">\r\n                    <span class=\"header-text\"><strong>Avatar World</strong></span>\r\n                    <p>Follow the Na'vi and hop aboard for a family-friendly ride</p>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"single-box\">\r\n                <div class=\"img-area\"></div>\r\n                <div class=\"img-text\">\r\n                    <span class=\"header-text\"><strong>Hogwarts Express</strong></span>\r\n                    <p>A magical adventure discovering the wizarding world</p>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"single-box\">\r\n                <div class=\"img-area\"></div>\r\n                <div class=\"img-text\">\r\n                    <span class=\"header-text\"><strong>Star Wars VR Show</strong></span>\r\n                    <p>Meet and greet your favourite Star Wars character and enjoy live VR shows</p>\r\n                </div>\r\n            </div>\r\n    \r\n    </div>\r\n    <!-- end of rides -->\r\n  \r\n</div>\r\n\r\n\r\n    <!-- footer -->\r\n    <div class=\"footer\">\r\n        footer\r\n    </div>\r\n    <!-- end of footer -->\r\n\r\n\r\n</div>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/attractions.html b/attractions.html
+--- a/attractions.html	
++++ b/attractions.html	
+@@ -13,9 +13,9 @@
+ <div id="site_wrap">
+ 
+     <!-- header -->
+-    <div class="header">
++    <header class="header">
+         header
+-    </div> 
++    </header>
+     <!-- end of header -->
+ 
+     
+@@ -71,9 +71,9 @@
+ 
+ 
+     <!-- footer -->
+-    <div class="footer">
++    <footer class="footer">
+         footer
+-    </div>
++    </footer>
+     <!-- end of footer -->
+ 
+ 
