@@ -1,21 +1,154 @@
-/* Container holding the image and the text */
+/* === Index page === */
 
-.container {
-    position: relative;
-    text-align: center;
-    color: black;
-    }
 
-    /* Top left text */
-    .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    }
+/* banner image and the text */
 
-    .form-all {
-    float: left;
-    }
+.banner-text {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.banner {
+	position: relative;
+}
+
+.banner-image {
+	width: 100%;
+	height: 500px;
+}
+
+.banner-text {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-text h1 {
+	font-size: 4em;
+	text-shadow: 0 0 6px #000000a8;
+}
+
+.banner-text h3 {
+	font-size: 3em;
+	font-weight: lighter;
+	line-height: 1em;
+}
+
+.section-content {
+	padding-bottom: 20px;
+}
+
+.section-content h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.4em;
+	line-height: 1.5;
+	color: white;
+	text-align: left;
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.section-content h3 {
+	font-family: Arial;
+	font-size: 1.6em;
+	line-height: 1.5;
+	color: white;
+	text-align: left;
+	padding-left: 90px;
+	padding-right: 90px;
+	font-weight: lighter;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+article {
+	display: flex;
+	margin: 20px;
+	border-radius: 25px;
+	max-width: 80%;
+	box-shadow: 2px 2px 11px 5px #0000000d;
+}
+
+.article-4 {
+	display: flex;
+	margin: 20px;
+	border-radius: 25px;
+	max-width: 50%;
+	box-shadow: 2px 2px 11px 5px #0000000d;
+}
+
+article>*:first-child {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+article>*:last-child {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+
+/*image sizing*/
+
+.section-image {
+	width: 60%;
+	object-position: 50% 50%;
+	object-fit: cover;
+}
+
+.section-content {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*article background color*/
+
+.article-1 .section-content {
+	background-color: #376E6F;
+}
+
+.article-2 .section-content {
+	background-color: #2E151B;
+}
+
+.article-3 .section-content {
+	background-color: #1C3334;
+}
+
+.article-4 .section-content {
+	background-color: #2F4454;
+}
+
+
+/*style form*/
+
+form {
+	font-size: 2em;
+	color: white;
+	width: 100%;
+	line-height: 1em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 44px 90px;
+	background: #DA7B93;
+}
+
+form input {
+	line-height: 3em;
+}
+
+
+/* === Index page end === */
 
 
 
@@ -141,6 +274,7 @@ body{
     grid-area:featured_header;
     background-size: cover;
 }
+
 
 /* banner text */
 .featured_header h1{
