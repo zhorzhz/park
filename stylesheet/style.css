@@ -177,7 +177,7 @@ body{
     /* rows */
     grid-template-rows:
         /* header */
-        200px
+        152px
         /* banner */
         605px
         /* rides */
@@ -274,6 +274,46 @@ body{
     grid-area:featured_header;
     background-size: cover;
 }
+
+/* header nav - Phil Mc */
+
+header {
+    padding: 30px 60px;
+    line-height: normal;
+}
+
+#logo {
+    padding: 0;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+header ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+header li {
+    display: inline-block;
+}
+
+.menuButton, .menuButton:hover {
+    display: inline-block;
+    color: palegoldenrod;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 28px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 25px 25px;
+    text-align: center;
+    vertical-align: center;
+    margin-left: 20px;
+    background-image: url("../images/blackSand.png");
+}
+/* end header nav */
 
 
 /* banner text */
@@ -442,3 +482,41 @@ body{
     background-color: rgb(31, 65, 65);
     grid-area:footer
 }
+/* footer Phil Mc */
+footer {
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footerButton, .footerButton:hover {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 15px 20px;
+
+    text-align: center;
+    vertical-align: center;
+    margin-right: 20px;
+}
+
+footer img {
+    position: relative;
+    top: 15px;
+}
+
+
