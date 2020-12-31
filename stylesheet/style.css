@@ -1,5 +1,29 @@
 /* === Index page === */
 
+.animate-heartBeat {
+    animation-name: heartBeat;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 20;
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1)
+    }
+    14% {
+        transform: scale(1.2)
+    }
+    28% {
+        transform: scale(1)
+    }
+    42% {
+        transform: scale(1.2)
+    }
+    70% {
+        transform: scale(1)
+    }
+}
 
 /* banner image and the text */
 
@@ -34,6 +58,8 @@
 	font-weight: lighter;
 	line-height: 1em;
 }
+
+/*flex box sections*/
 
 .section-content {
 	padding-bottom: 20px;
@@ -74,12 +100,59 @@ article {
 	box-shadow: 2px 2px 11px 5px #0000000d;
 }
 
-.article-4 {
+.newsletter h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4em;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.newsletter h3 {
+    font-family: Arial;
+    font-size: 1.6em;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-weight: lighter;
+    margin-top: 0
+}
+
+.newsletter {
+    position: relative;
 	display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
 	margin: 20px;
 	border-radius: 25px;
-	max-width: 50%;
+    max-width: 70%;
 	box-shadow: 2px 2px 11px 5px #0000000d;
+    background: #2F4454;
+    padding-top: 40px;
+}
+
+.newsletter .newsletter-icon {
+    position: absolute;
+    top: -52px;
+    width: 110px;
+    padding: 16px 32px;
+}
+
+.newsletter form {
+    font-size: 2em;
+    line-height: 1em;
+    text-align: center;
+    padding: 14px 14px 34px 14px;
+    width: 57%;
+}
+
+form .form-row {
+    display: flex;
 }
 
 article>*:first-child {
@@ -91,7 +164,6 @@ article>*:last-child {
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
-
 
 /*image sizing*/
 
@@ -109,7 +181,6 @@ article>*:last-child {
 	justify-content: center;
 }
 
-
 /*article background color*/
 
 .article-1 .section-content {
@@ -124,29 +195,41 @@ article>*:last-child {
 	background-color: #1C3334;
 }
 
-.article-4 .section-content {
-	background-color: #2F4454;
-}
-
-
 /*style form*/
 
-form {
-	font-size: 2em;
-	color: white;
-	width: 100%;
-	line-height: 1em;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	padding: 44px 90px;
-	background: #DA7B93;
-}
-
 form input {
-	line-height: 3em;
+    line-height: 3em;
+    width: 53%;
 }
 
+/*style subscribe buttom */
+
+.subscribebutton {
+    background-color: #d581a1;
+    border: none;
+	color: white;
+    padding: 16px 32px;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.subscribebutton {
+    background-color: #d581a1;
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+    /*  border: 2px solid white*/
+}
+
+.subscribebutton:hover {
+    background-color: white;
+    color: #d581a1
+}
 
 /* === Index page end === */
 
