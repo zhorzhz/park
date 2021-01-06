@@ -235,6 +235,7 @@ form input {
 
 
 
+/* === Attractions page === */
 /* body part */
 body{
     margin:0;
@@ -243,10 +244,9 @@ body{
     line-height: 1.5em;
 }
 
-
 /* grid */
 #site_wrap{
-    background-color: white;
+    background-color: #ffffff;
     height:100vh;
     display: grid;
 
@@ -277,7 +277,6 @@ body{
     ;
 }
 
-
 /* flexbox */
 .box-area{
     display: flex;
@@ -295,7 +294,7 @@ body{
     height: auto;
     border-radius: 4px;
     text-align: center;
-    background-color:azure;
+    background-color:#5c9899;
     margin: 20px;
     padding: 20px;
     transition: .3s;
@@ -330,7 +329,7 @@ body{
 }
 .img-text{
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 20px;
+    padding-top: 20px;  
 }
 .img-text p{
     font-size: 20px;
@@ -338,15 +337,13 @@ body{
     line-height: 30px;
 }
 .single-box:hover{
-    background: grey;
-    color: white;
+    background: #808080;
+    color: #ffffff;
 }
 /* end of flexbox */
 
 
-
-
-/* header Jen */
+/* header Jen Howen */
 .header{
     /*background-color: peru;*/
     grid-area:header;
@@ -429,7 +426,7 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
 
 /* featured header text */
 .featured_header h1{
-    color: white;
+    color: #ffffff;
     display: flex;
     font-size: 50px;
     justify-content: center;
@@ -440,10 +437,9 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
     top: 50%;
     width: 100%;
     text-align: center;
-
 }
 .featured_header p{
-    color: white;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -454,15 +450,16 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
     top: 70%;
     width: 100%;
     text-align: center;
-    
 }
 
 /* rides */
 .featured_main{
-    background-color: white;
+    background-color: #ffffff;
     padding: 2em 0;
     grid-area:featured_main
 }
+/* rides end */
+/* === Attractions page end === */
 
 .ticket-info-banner-image {
     background-image: url('../images/tickets.png');
@@ -602,7 +599,7 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
     box-sizing: inherit;
 }
 
-/* footer Jen */
+/* footer Jen Howen */
 .footer{
     /*background-color: rgb(31, 65, 65);*/
     grid-area:footer
