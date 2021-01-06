@@ -246,7 +246,7 @@ body{
 
 /* grid */
 #site_wrap{
-    background-color: antiquewhite;
+    background-color: white;
     height:100vh;
     display: grid;
 
