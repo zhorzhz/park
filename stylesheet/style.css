@@ -351,9 +351,9 @@ body{
     /*background-color: peru;*/
     grid-area:header;
 }
-/* banner image */
+/* featured header image */
 .featured_header{
-    background-image: url('../images/carousel/1.jpg');
+    background-image: url('../images/carousel/featured-header.jpg');
     grid-area:featured_header;
     background-size: cover;
 }
@@ -427,25 +427,39 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
 /****** end header nav ******/
 
 
-/* banner text */
+/* featured header text */
 .featured_header h1{
     color: white;
     display: flex;
     font-size: 50px;
     justify-content: center;
     align-items: center;
+    font-size: 4em;
+    text-shadow: 0 0 6px #000000a8;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
 }
 .featured_header p{
     color: white;
     display: flex;
-    font-size: 25px;
     justify-content: center;
     align-items: center;
+    font-size: 3em;
+	font-weight: lighter;
+    line-height: 1em;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    
 }
 
 /* rides */
 .featured_main{
-    background-color: grey;
+    background-color: white;
     padding: 2em 0;
     grid-area:featured_main
 }
