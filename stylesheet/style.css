@@ -6,7 +6,9 @@
 /****** header nav - Phil Mc ******/
 
 header {
-    padding: 0 80px;
+    font-family: 'Pacifico', cursive;
+    box-sizing: border-box;
+    padding-left: 80px;
     line-height: normal;
     background-color: rgb(50, 50, 50);
     height: 110px;
@@ -17,28 +19,19 @@ header {
     z-index: 999;
 }
 
-#logo {
-    padding: 0;
-    border-style: none;
-    border-width: 1px;
-    border-radius: 10px;
-}
-
 #logoText {
-    font-family: 'Pacifico', cursive;
     font-size: 50px;
-    color: rgba(255, 255, 255, 1.0);
+    color: white;
     position: absolute;
     top: 6px;
-
+    text-decoration: none;
 }
 
 header ul {
     list-style: none;
     float: right;
-    margin: 0 160px 0 0;
+    margin: 0 80px 0 0;
     padding-top: 45px;
-    padding-inline-start: 0;
 }
 
 header li {
@@ -47,14 +40,12 @@ header li {
 }
 
 header li a {
-    font-family: 'Pacifico', cursive;
     font-size: 25px;
-    color: rgba(255, 255, 255, 1.0);
+    color: white;
 }
 
 .currentPage {
     text-decoration: none;
-    color: white;
     position: relative;
 }
 
@@ -66,19 +57,19 @@ header li a {
     height: 3px;
     bottom: 0;
     left: 0;
+    border-radius: 4px;
 }
 
 /* Animate menu options - source https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 
 a.menuButton:hover, a.currentPage:hover { /* override library styling on attractions page */
-    /*color: white;*/
-    /*text-decoration: none;*/
+    color: rgba(255, 255, 255, 1.0);
+    text-decoration: none;
 }
 
 .menuButton {
     position: relative;
     text-decoration: none;
-    /*color: white;*/
 }
 
 .menuButton::before { /* create underline with scaleX(0) so not visible */
@@ -89,6 +80,7 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
     height: 3px;
     bottom: 0;
     left: 0;
+    border-radius: 4px;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
@@ -632,12 +624,11 @@ body{
 footer {
     line-height: 90px;
     margin-top: 20px;
-    /*margin-bottom: 20px;*/
     text-align: center;
     background-color: rgb(50, 50, 50);
     height: 90px;
     font-family: 'Pacifico', cursive;
-    font-size: 23px;
+    font-size: 22px;
 }
 
 footer ul {
@@ -649,12 +640,11 @@ footer li {
     margin-right: 20px;
 }
 
-/* Animate menu options - source https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
-
 a.footerButton:hover { /* override library styling on attractions page */
     color: white;
     text-decoration: none;
 }
+/* Animate menu options - source https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 
 .footerButton {
     position: relative;
@@ -671,6 +661,7 @@ a.footerButton:hover { /* override library styling on attractions page */
     height: 2px;
     bottom: 0;
     left: 0;
+    border-radius: 4px;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
