@@ -353,6 +353,7 @@ body{
     background-image: url('../images/carousel/featured-header.jpg');
     grid-area:featured_header;
     background-size: cover;
+    position: relative;
 }
 
 /****** header nav - Phil Mc ******/
@@ -425,8 +426,9 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
 
 
 /* featured header text */
-.featured_header h1{
-    color: #ffffff;
+
+.featured_header h1 {
+    /* color: #ffffff;
     display: flex;
     font-size: 50px;
     justify-content: center;
@@ -436,10 +438,22 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
     position: absolute;
     top: 50%;
     width: 100%;
+    text-align: center; */
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Pacifico', cursive;
     text-align: center;
+    line-height: 1;
+    padding-bottom: 40px;
+    font-size: 4em;
+    position: relative
 }
 .featured_header p{
-    color: #ffffff;
+    /* color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,7 +463,20 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
     position: absolute;
     top: 70%;
     width: 100%;
+    text-align: center; */
+
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    line-height: 1;
+    padding-bottom: 40px;
+    font-size: 2.4em;
+    font-weight: lighter;
+    line-height: 1em;
 }
 
 /* rides */
