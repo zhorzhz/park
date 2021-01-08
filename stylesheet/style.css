@@ -240,21 +240,31 @@ body{
 }
 
 .ticket-info-banner-image {
-    background-image: url('../images/tickets.png');
+    background-image: url('../images/tickets.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 605px;
 }
 
+.ticket-info-title {
+    text-align: center;
+    line-height: 605px;
+    color: white;
+    font-size: 7.4em !important;
+    text-shadow: 0 0 16px #00000057;
+    font-family: Pacifico, cursive, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
 .covid-warning {
-    background-image: url('../images/covid.png');
+    background-image: url('../images/covid.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100%;
 }
 
 .details-info-row {
-    height: 400px;
+    height: 500px;
 }
 
 .prices-row {
@@ -310,15 +320,15 @@ body{
 }
 
 .details-title-box {
-    background-color: #fdb713;
+    background-color: #2E151B;
 }
 
 .warning-title-box {
-    background-color: #ff6537;
+    background-color: #479292;
 }
 
-.map-title-box {
-    background-color: #006ba1;
+.text-white {
+    color: white;
 }
 
 .faq-table {
@@ -355,20 +365,20 @@ body{
 
 .price-col-attractions {
     border-top-left-radius: 10px;
-    background-color: #fdb713;
+    background-color: #479292;
 }
 
 .price-col-single-attraction {
-    background-color: #ff6537;
+    background-color: #2F4454;
 }
 
 .price-col-day-pass {
-    background-color: #2a398c;
+    background-color: #1C3334;
 }
 
 .price-col-flex-pass {
     border-top-right-radius: 10px;
-    background-color: #006ba1;
+    background-color: #2E151B;
 }
 
 *,
