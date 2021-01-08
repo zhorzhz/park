@@ -197,13 +197,13 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #ffffff;
     font-family: 'Pacifico', cursive, Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 0.2;
     padding-bottom: 40px;
     font-weight: 800;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 .featured_header p{
