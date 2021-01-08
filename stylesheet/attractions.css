@@ -1,3 +1,5 @@
+/* Attractions page */
+
 /* body part */
 body{
     margin:0;
@@ -6,10 +8,9 @@ body{
     line-height: 1.5em;
 }
 
-
 /* grid */
 #site_wrap{
-    background-color: antiquewhite;
+    background-color: #ffffff;
     height:100vh;
     display: grid;
 
@@ -40,7 +41,6 @@ body{
     ;
 }
 
-
 /* flexbox */
 .box-area{
     display: flex;
@@ -58,7 +58,7 @@ body{
     height: auto;
     border-radius: 4px;
     text-align: center;
-    background-color:azure;
+    background-color:#5c9899;
     margin: 20px;
     padding: 20px;
     transition: .3s;
@@ -93,7 +93,7 @@ body{
 }
 .img-text{
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 20px;
+    padding-top: 20px;  
 }
 .img-text p{
     font-size: 20px;
@@ -101,25 +101,18 @@ body{
     line-height: 30px;
 }
 .single-box:hover{
-    background: grey;
-    color: white;
+    background: #808080;
+    color: #ffffff;
 }
 /* end of flexbox */
 
 
-
-
-/* header Jen */
+/* header Jen Howen */
 .header{
     /*background-color: peru;*/
     grid-area:header;
 }
-/* banner image */
-.featured_header{
-    background-image: url('../images/carousel/1.jpg');
-    grid-area:featured_header;
-    background-size: cover;
-}
+
 
 /****** header nav - Phil Mc ******/
 
@@ -190,172 +183,64 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
 /****** end header nav ******/
 
 
-/* banner text */
-.featured_header h1{
-    color: white;
-    display: flex;
-    font-size: 50px;
-    justify-content: center;
-    align-items: center;
+/* featured header */
+.featured_header{
+    background-image: url('../images/carousel/featured-header.jpg');
+    grid-area:featured_header;
+    background-size: cover;
+    position: relative;
 }
-.featured_header p{
+
+/* featured header text */
+.featured_header h1{
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    display: flex;
-    font-size: 25px;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Pacifico', cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 0.2;
+    padding-bottom: 40px;
+    font-weight: 800;
+    font-size: 5em;
+}
+
+.featured_header p{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1;
+    padding-bottom: 40px;
+    font-size: 2.4em;
+    font-weight: lighter;
+    line-height: 1em;
+}
+
+.featured_header:hover h1{
+    text-shadow: 0 0 10px #ffffff,
+                 0 0 20px #ffffff;
 }
 
 /* rides */
 .featured_main{
-    background-color: grey;
+    background-color: #ffffff;
     padding: 2em 0;
     grid-area:featured_main
 }
+/* end rides */
 
-.ticket-info-banner-image {
-    background-image: url('../images/tickets.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 605px;
-}
-
-.covid-warning {
-    background-image: url('../images/covid.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 100%;
-}
-
-.details-info-row {
-    height: 400px;
-}
-
-.prices-row {
-    height: 300px;
-}
-
-.map-row {
-    height: 400px;
-}
-
-.faq-row {
-    height: 380px;
-}
-
-.details-box {
-    height: 100%;
-}
-
-.warning-box {
-    height: 100%;
-}
-
-.text-centered {
-    text-align: center;
-}
-
-.text-padding {
-    padding: 10px;
-}
-
-.no-margin {
-    margin: 0;
-}
-
-.margin-top {
-    margin-top: 10px;
-}
-
-.main {
-    padding: 20px 20px;
-}
-
-.info-page {
-    box-sizing: border-box;
-}
-
-.bordered-box {
-    border: 2px solid #000;
-}
-
-.box-shadowed {
-    box-shadow: 0 6px 18px 0 rgba(0,0,0,.31);
-}
-
-.details-title-box {
-    background-color: #fdb713;
-}
-
-.warning-title-box {
-    background-color: #ff6537;
-}
-
-.map-title-box {
-    background-color: #006ba1;
-}
-
-.faq-table {
-    margin-top: 10px;
-}
-
-.map-view {
-    height: 400px;
-}
-
-/** price table*/
-
-.price-table {
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.rounded-borders {
-    border-radius: 10px;
-}
-
-.rounded-borders-top {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.price-col {
-
-}
-
-.price-row-grey {
-    background-color: #dedcdc;
-}
-
-.price-col-attractions {
-    border-top-left-radius: 10px;
-    background-color: #fdb713;
-}
-
-.price-col-single-attraction {
-    background-color: #ff6537;
-}
-
-.price-col-day-pass {
-    background-color: #2a398c;
-}
-
-.price-col-flex-pass {
-    border-top-right-radius: 10px;
-    background-color: #006ba1;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-/* footer Jen */
+/* footer Jen Howen */
 .footer{
     /*background-color: rgb(31, 65, 65);*/
     grid-area:footer
 }
+
+
 
 /****** footer Phil Mc ******/
 footer {
