@@ -1,3 +1,104 @@
+/* header Jen */
+.header{
+    /*background-color: peru;*/
+    grid-area:header;
+}
+/****** header nav - Phil Mc ******/
+
+header {
+    font-family: 'Pacifico', cursive;
+    box-sizing: border-box;
+    padding-left: 80px;
+    line-height: normal;
+    background-color: rgb(50, 50, 50);
+    height: 110px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#logoText {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 6px;
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    float: right;
+    margin: 0 80px 0 0;
+    padding-top: 45px;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+header li a {
+    font-size: 25px;
+    color: white;
+}
+
+.currentPage {
+    text-decoration: none;
+    position: relative;
+}
+
+.currentPage::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+}
+
+/* Animate menu options - source https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+
+a.menuButton:hover, a.currentPage:hover { /* override library styling on attractions page */
+    color: rgba(255, 255, 255, 1.0);
+    text-decoration: none;
+}
+
+.menuButton {
+    position: relative;
+    text-decoration: none;
+}
+
+.menuButton::before { /* create underline with scaleX(0) so not visible */
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.menuButton:hover::before { /* scale on hover to trigger animation */
+    visibility: visible;
+    transform: scaleX(1);
+
+}
+
+#navSpacer {            /** to pad behind the nav bar when scrolled to the top **/
+    height: 110px;
+    width: 100%;
+}
+
+/****** end header nav ******/
+
 /* === Index page === */
 
 .animate-heartBeat {
@@ -343,14 +444,6 @@ body{
 }
 /* end of flexbox */
 
-
-
-
-/* header Jen */
-.header{
-    /*background-color: peru;*/
-    grid-area:header;
-}
 /* banner image */
 .featured_header{
     background-image: url('../images/carousel/1.jpg');
@@ -358,73 +451,6 @@ body{
     background-size: cover;
 }
 
-/****** header nav - Phil Mc ******/
-
-header {
-    padding: 10px  80px 5px 80px;
-    line-height: normal;
-    background-color: rgb(50, 50, 50);
-    font-size: 20px;
-}
-
-#logo {
-    padding: 0;
-    border-style: none;
-    border-width: 1px;
-    border-radius: 10px;
-}
-
-header ul {
-    list-style: none;
-    float: right;
-    margin: 0;
-    padding-top: 55px;
-    padding-inline-start: 0;
-}
-
-header li {
-    display: inline-block;
-    margin-left: 40px;
-}
-
-.currentPage {
-    text-decoration: underline;
-    color: white;
-}
-
-/* Animate menu options - source https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
-
-a.menuButton:hover, a.currentPage:hover { /* override library styling on attractions page */
-    color: white;
-    text-decoration: none;
-}
-
-.menuButton {
-    position: relative;
-    text-decoration: none;
-    color: white;
-}
-
-.menuButton::before { /* create underline with scaleX(0) so not visible */
-    content: "";
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.menuButton:hover::before { /* scale on hover to trigger animation */
-    visibility: visible;
-    transform: scaleX(1);
-
-}
-
-/****** end header nav ******/
 
 
 /* banner text */
@@ -598,15 +624,15 @@ a.menuButton:hover, a.currentPage:hover { /* override library styling on attract
 footer {
     line-height: 90px;
     margin-top: 20px;
-    /*margin-bottom: 20px;*/
     text-align: center;
     background-color: rgb(50, 50, 50);
     height: 90px;
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
 }
 
 footer ul {
     list-style: none;
-     padding-inline-start: 0;
 }
 
 footer li {
@@ -614,15 +640,15 @@ footer li {
     margin-right: 20px;
 }
 
-/* Animate menu options - source https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
-
 a.footerButton:hover { /* override library styling on attractions page */
     color: white;
     text-decoration: none;
 }
+/* Animate menu options - source https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 
 .footerButton {
     position: relative;
+    top: 3px;
     text-decoration: none;
     color: white;
 }
@@ -635,6 +661,7 @@ a.footerButton:hover { /* override library styling on attractions page */
     height: 2px;
     bottom: 0;
     left: 0;
+    border-radius: 4px;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
