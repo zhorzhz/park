@@ -19,7 +19,7 @@ body{
     1fr
     repeat(4,minmax(0,272px))
     1fr;
-    grid-gap:0px;
+    grid-gap:0;
 
     /* rows */
     grid-template-rows:
@@ -142,7 +142,6 @@ body{
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    line-height: 1;
     padding-bottom: 40px;
     font-size: 2.4em;
     font-weight: lighter;
@@ -160,4 +159,8 @@ body{
 /* footer Jen Howen */
 .footer{
     grid-area:footer
+}
+
+.footer ul {
+    padding-top: 0;
 }
