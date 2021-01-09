@@ -145,7 +145,7 @@ body{
 }
 
 .map-row {
-    height: 400px;
+    height: 600px;
 }
 
 .faq-row {
@@ -162,6 +162,14 @@ body{
 
 .rki-pdf-box {
     height: 100%;
+}
+
+.map-box {
+    height: 100%;
+}
+
+.video>iframe {
+    width: 100%;
 }
 
 .contact-box {
@@ -216,6 +224,14 @@ body{
     background-color: #2F4454;
 }
 
+.map-title-box {
+    background-color: #2F4454;
+}
+
+.faq-title-box {
+    background-color: #2F4454;
+}
+
 .text-white {
     color: white;
 }
@@ -225,7 +241,12 @@ body{
 }
 
 .map-view {
-    height: 400px;
+    height: 100%;
+}
+
+.map-view>iframe {
+    width: 100%;
+    height: 85%;
 }
 
 /** price table*/
