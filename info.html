@@ -8,16 +8,7 @@
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="stylesheet/grid_system.css">
 
-    <!-- google maps -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAQqLnF0_d5sLnYcE9QMO0pOawlejgF2o&callback=initMap&libraries=&v=weekly"
-            defer
-    ></script>
-    <link rel="stylesheet" type="text/css" href="./stylesheet/gmaps.css" />
-    <script src="./scripts/gmaps.js"></script>
-
-    <! -- External font for navigation -->
+    <!-- External font for navigation -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- speed up external font loading -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
@@ -35,16 +26,21 @@
     </header>
     <!-- end of header -->
 
+    <!-- Grid system of the page -->
     <div class="grid">
-        <div class="col-1 ticket-info-banner-image"></div>
+        <!-- Banner is a One item for the whole width of the page so use col-1 grid -->
+        <div class="col-1 ticket-info-banner-image">
+            <h1 class="ticket-info-title">Info & tickets</h1>
+        </div>
+        <!-- main items of the page -->
         <div class="main">
+            <!-- details section has 2 columns so use col-2 grid scheme -->
             <div class="details-info-row col-2">
-                <div id="covidInfo" class="grid-item">
+                <div class="grid-item" id="covidInfo">
                     <div class="warning-box rounded-borders box-shadowed">
                         <div class="warning-title-box rounded-borders-top grid col-1">
                             <div class="grid-item">
-                                <h3 class="text-centered">Warning</h3>
-
+                                <h3 class="text-centered text-white">Warning</h3>
                             </div>
                         </div>
                         <div class="covid-warning"></div>
@@ -55,7 +51,7 @@
                     <div class="details-box rounded-borders box-shadowed">
                         <div class="details-title-box rounded-borders-top grid col-1">
                             <div class="grid-item">
-                                <h3 class="text-centered">Details</h3>
+                                <h3 class="text-centered text-white">Details</h3>
                             </div>
                         </div>
                         <h4 class="text-padding no-margin">Unlimited access to the Park</h4>
@@ -65,22 +61,23 @@
                     </div>
                 </div>
             </div>
+            <!-- prices section has 1 columns so use col-1 grid scheme -->
             <div class="prices-row col-1 margin-top">
                 <div class="grid-item">
                     <h3 class="text-centered">Prices</h3>
                     <div class="price-table box-shadowed">
                         <div class="price-col grid col-4">
                             <div class="price-col-attractions grid-item">
-                                <h3 class="text-centered">Attractions</h3>
+                                <h3 class="text-centered text-white">Attractions</h3>
                             </div>
                             <div class="price-col-single-attraction grid-item">
-                                <h3 class="text-centered">Single attraction price</h3>
+                                <h3 class="text-centered text-white">Single attraction price</h3>
                             </div>
                             <div class="price-col-day-pass grid-item">
-                                <h3 class="text-centered">Day pass</h3>
+                                <h3 class="text-centered text-white">Day pass</h3>
                             </div>
                             <div class="price-col-flex-pass grid-item">
-                                <h3 class="text-centered">Flex pass</h3>
+                                <h3 class="text-centered text-white">Flex pass</h3>
                             </div>
                         </div>
                         <div class="price-row grid col-4">
@@ -125,10 +122,10 @@
                                 <p class="text-centered">$14.99</p>
                             </div>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
-
+            <!-- faq section has 1 columns so use col-1 grid scheme -->
             <div class="faq-row col-1 margin-top">
                 <div id="faq" class="grid-item">
                     <h3 class="text-centered">FAQ</h3>
@@ -158,23 +155,9 @@
                     </div>
                 </div>
             </div>
-
-            <div class="map-row col-1">
-                <div class="grid-item">
-                    <div class="map-box rounded-borders box-shadowed">
-                        <div class="map-title-box rounded-borders-top grid col-1">
-                            <div class="grid-item">
-                                <h3 class="text-centered">Map</h3>
-                            </div>
-                        </div>
-                        <div class="map-view">
-                            <div id="map"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+    <!-- start footer -->
     <footer>
         <ul>
             <li><a class="footerButton" href="info.html">About Us</a></li>
