@@ -241,10 +241,10 @@ body{
     box-sizing: inherit;
 }
 
-
 /****** footer Phil Mc ******/
 footer {
-    line-height: 90px;
+    /*line-height: 90px;*/
+    box-sizing: border-box;
     margin-top: 20px;
     text-align: center;
     background-color: rgb(50, 50, 50);
@@ -255,6 +255,7 @@ footer {
 
 footer ul {
     list-style: none;
+    padding-top: 23px;
 }
 
 footer li {
