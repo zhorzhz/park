@@ -131,12 +131,21 @@ body{
     height: 500px;
 }
 
+.rki-pdf-body {
+    height: 85%;
+}
+
+.rki-pdf {
+    width: 100%;
+    height: 100%;
+}
+
 .prices-row {
     height: 300px;
 }
 
 .map-row {
-    height: 400px;
+    height: 600px;
 }
 
 .faq-row {
@@ -148,6 +157,22 @@ body{
 }
 
 .warning-box {
+    height: 100%;
+}
+
+.rki-pdf-box {
+    height: 100%;
+}
+
+.map-box {
+    height: 100%;
+}
+
+.video>iframe {
+    width: 100%;
+}
+
+.contact-box {
     height: 100%;
 }
 
@@ -191,6 +216,22 @@ body{
     background-color: #479292;
 }
 
+.rki-pdf-title-box {
+    background-color: #479292;
+}
+
+.contact-title-box {
+    background-color: #2F4454;
+}
+
+.map-title-box {
+    background-color: #2F4454;
+}
+
+.faq-title-box {
+    background-color: #2F4454;
+}
+
 .text-white {
     color: white;
 }
@@ -200,7 +241,12 @@ body{
 }
 
 .map-view {
-    height: 400px;
+    height: 100%;
+}
+
+.map-view>iframe {
+    width: 100%;
+    height: 85%;
 }
 
 /** price table*/
