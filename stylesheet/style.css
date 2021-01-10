@@ -124,11 +124,15 @@ body{
     background-image: url('../images/covid.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 85%;
 }
 
 .details-info-row {
-    height: 500px;
+    height: 600px;
+}
+
+.risk-contact-newattractions-row {
+    height: 600px;
 }
 
 .rki-pdf-body {
@@ -148,12 +152,22 @@ body{
     height: 600px;
 }
 
+.interactive-row {
+    height: 900px;
+}
+
 .faq-row {
     height: 380px;
 }
 
 .details-box {
     height: 100%;
+    overflow: auto;
+}
+
+.new-attractions-box {
+    height: 100%;
+    overflow: auto;
 }
 
 .warning-box {
@@ -168,8 +182,14 @@ body{
     height: 100%;
 }
 
+.interactive-box {
+    height: 100%;
+    background: #5c9899;
+}
+
 .video>iframe {
     width: 100%;
+    height: 315px;
 }
 
 .contact-box {
@@ -182,6 +202,17 @@ body{
 
 .text-padding {
     padding: 10px;
+}
+
+/* Sometime using header is not correct, however we want to have the same size so this styles will help */
+.text-like-h2 {
+    font-size: 1.5em;
+    font-weight: bolder
+}
+
+.text-like-h3 {
+    font-size: 1.17em;
+    font-weight: bolder
 }
 
 .no-margin {
@@ -212,6 +243,10 @@ body{
     background-color: #2E151B;
 }
 
+.new-attractions-title-box {
+    background-color: #2E151B;
+}
+
 .warning-title-box {
     background-color: #479292;
 }
@@ -228,6 +263,10 @@ body{
     background-color: #2F4454;
 }
 
+.interactive-title-box {
+    background-color: #2F4454;
+}
+
 .faq-title-box {
     background-color: #2F4454;
 }
@@ -236,12 +275,22 @@ body{
     color: white;
 }
 
+.text-font-normal {
+    font-style: normal;
+}
+
 .faq-table {
     margin-top: 10px;
 }
 
 .map-view {
     height: 100%;
+}
+
+.interactive-view {
+    height: 640px;
+    width: 960px;
+    margin: auto;
 }
 
 .map-view>iframe {
@@ -269,7 +318,7 @@ body{
 
 }
 
-.price-row-grey {
+.background-grey {
     background-color: #dedcdc;
 }
 
