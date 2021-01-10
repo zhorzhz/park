@@ -194,6 +194,7 @@ body{
 
 .contact-box {
     height: 100%;
+    overflow: auto;
 }
 
 .text-centered {
@@ -261,6 +262,10 @@ body{
 
 .map-title-box {
     background-color: #2F4454;
+}
+
+.display-block {
+    display: block;
 }
 
 .interactive-title-box {
