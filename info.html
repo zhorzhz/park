@@ -5,12 +5,15 @@
     <title>Filmopolis Tickets & Information</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Info and tickets of best park of 2021 for attractions and movies">
+    <meta name="keywords" content="Info,Ticket,Price,Map,Address,Covid,Coronavirus,Trailer,I">
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="stylesheet/grid_system.css">
 
     <!-- External font for navigation -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- speed up external font loading -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- icons -->
 </head>
 
 <body class="info-page">
@@ -60,12 +63,16 @@
                         <p class="text-padding no-margin">Enjoy the Park from morning until night for every day of your stay. You will never get bored in our park and with every visit you will find new attractions full which are unique in the world.</p>
                         <h3 class="text-padding no-margin">Free parking</h3>
                         <p class="text-padding no-margin">Take the advantage of free parking right by your accommodation and the Park entrances. Our Parking place is enough for every visitor. If you are comming by bike, no problem we have a parking for bikes as well. Our parking is also equipped with chargins stations for electric vehicles, so while you will be enjoying our park your car will get fully charged and ready for you.</p>
+                        <h3 class="text-padding no-margin">Covid measures</h3>
+                        <p class="text-padding no-margin">We care about health and safety of our visitors. Our attractions are being cleanes and desinfected several times a day. You will need to Wear a mask during the whole period of in our park. To make sure that you are well informed about COVID-19 prevention measures, please check our <a href="#covidInfo">warning section</a>. If you are traveling from other countries please make sure to check the <a href="#riskAreas">information about international risk areas</a> and follow the measures.</p>
+                        <h3 class="text-padding no-margin">You are not a big movie fan, but still want to discover our park?</h3>
+                        <p class="text-padding no-margin">No worries our park is designed for everyone, so you will enjoy our park even if you are not a big movie fan. Check our <a href="#interactiveShow">interactive show</a> section to get to know current most loved attraction movies.</p>
 
                     </div>
                 </div>
             </div>
-            <div class="details-info-row col-3 margin-top">
-                <div class="grid-item">
+            <div class="risk-contact-newattractions-row col-3 margin-top">
+                <div class="grid-item" id="riskAreas">
                     <div class="rki-pdf-box rounded-borders box-shadowed">
                         <div class="rki-pdf-title-box rounded-borders-top grid col-1">
                             <div class="grid-item">
@@ -87,21 +94,28 @@
                             </div>
                         </div>
                         <address>
-                            <h2 class="text-padding no-margin">Phone</h2>
+                            <p class="text-padding text-centered text-font-normal text-like-h2">Phone <i class="material-icons">local_phone</i></p>
                             <ul>
-                                <li><a href="tel:+374010101"><h3 class="no-margin">+374-01-01-01</h3></a></li>
-                                <li><a href="tel:+374010102"><h3 class="no-margin">+374-01-01-02</h3></a></li>
+                                <li><a href="tel:+374010101"><p class="no-margin text-font-normal text-like-h3">+374-01-01-01</p></a></li>
+                                <li><a href="tel:+374010102"><p class="no-margin text-font-normal text-like-h3">+374-01-01-02</p></a></li>
                             </ul>
 
-                            <h2 class="text-padding no-margin">Email</h2>
+                            <p class="text-padding no-margin text-centered text-font-normal text-like-h2">Email <i class="material-icons">email</i></p>
                             <ul>
-                                <li><a href="mailto:hello@filmopolis.com"><h3 class="no-margin">hello@filmopolis.com</h3></a></li>
-                                <li><a href="mailto:lostandfound@filmopolis.com"><h3 class="no-margin">lostandfound@filmopolis.com</h3></a></li>
+                                <li><a href="mailto:hello@filmopolis.com"><p class="no-margin text-font-normal text-like-h3">hello@filmopolis.com</p></a></li>
+                                <li><a href="mailto:lostandfound@filmopolis.com"><p class="no-margin text-font-normal text-like-h3">lostandfound@filmopolis.com</p></a></li>
                             </ul>
-                            <h2 class="text-padding no-margin">Address</h2>
-                            <h3 class="text-padding no-margin">Frankenwell</h3>
-                            <h3 class="text-padding no-margin">08209 Euerbach/Fogland</h3>
-                            <h3 class="text-padding no-margin">Oceania</h3>
+
+                            <p class="text-padding no-margin text-centered text-font-normal text-like-h2">Address <i class="material-icons">map</i></p>
+                            <a href="#map">
+                                <ul>
+                                    <li>
+                                        <p class="text-padding no-margin text-font-normal text-like-h3">Frankenwell</p>
+                                        <p class="text-padding no-margin text-font-normal text-like-h3">08209 Euerbach/Fogland</p>
+                                        <p class="text-padding no-margin text-font-normal text-like-h3">Oceania</p>
+                                    </li>
+                                </ul>
+                            </a>
                         </address>
                     </div>
                 </div>
@@ -114,7 +128,7 @@
                             </div>
                         </div>
                         <div class="video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RFinNxS5KN4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/RFinNxS5KN4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <h3 class="text-centered">In our park you will find the latest Jurassic world attractions and of course have a chance to watch the movie</h3>
                     </div>
@@ -186,7 +200,7 @@
                 </div>
             </div>
             <!-- map section has 1 columns so use col-1 grid scheme -->
-            <div class="map-row col-1 margin-top">
+            <div class="map-row col-1 margin-top" id="map">
                 <div class="grid-item">
                     <div class="map-box rounded-borders box-shadowed">
                         <div class="map-title-box rounded-borders-top grid col-1">
@@ -195,7 +209,36 @@
                             </div>
                         </div>
                         <div class="map-view">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.260077869744!2d-0.13025689170816954!3d51.522018763817584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2e05fa84a1%3A0x35223832b9a7517a!2sUniversity%20of%20London!5e0!3m2!1sen!2sde!4v1610216419618!5m2!1sen!2sde" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.260077869744!2d-0.13025689170816954!3d51.522018763817584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2e05fa84a1%3A0x35223832b9a7517a!2sUniversity%20of%20London!5e0!3m2!1sen!2sde!4v1610216419618!5m2!1sen!2sde" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- map section has 1 columns so use col-1 grid scheme -->
+            <div class="interactive-row col-1 margin-top" id="interactiveShow">
+                <div class="grid-item">
+                    <div class="interactive-box rounded-borders box-shadowed">
+                        <div class="interactive-title-box rounded-borders-top grid col-1">
+                            <div class="grid-item">
+                                <h1 class="text-centered text-white">Interactive Show</h1>
+                            </div>
+                        </div>
+                        <h2 class="text-centered text-padding text-white">Our park has attractions for all movies. Below you can get to know the most favourite ones by our visitors. Our interactive Map will help you to find trailer of your favourite movie. <mark>Just click on the image and you will be directed to the trailer.</mark></h2>
+                        <div class="interactive-view">
+                            <img src="images/interactive.jpg" alt="InteractiveMap" usemap="#interactiveMap">
+
+                            <map name="interactiveMap">
+                                <!-- Use blank so that the trailer will open in a new window -->
+                                <area class="area" shape="rect" coords="0,0,240,321" alt="Mad Max" href="https://www.youtube.com/watch?v=hEJnMQG9ev8" target="_blank">
+                                <area class="area" shape="rect" coords="240,0,480,321" alt="Interstellar" href="https://www.youtube.com/watch?v=zSWdZVtXT7E" target="_blank">
+                                <area class="area" shape="rect" coords="480,0,720,321" alt="Source Code" href="https://www.youtube.com/watch?v=mnJegNyAb1w" target="_blank">
+                                <area class="area" shape="rect" coords="720,0,960,321" alt="Ex Machina" href="https://www.youtube.com/watch?v=EoQuVnKhxaM" target="_blank">
+                                <!-- Second row -->
+                                <area class="area" shape="rect" coords="0,321,240,642" alt="Inception" href="https://www.youtube.com/watch?v=Qwe6qXFTdgc" target="_blank">
+                                <area class="area" shape="rect" coords="240,321,480,642" alt="Children of Men" href="https://www.youtube.com/watch?v=2VT2apoX90o" target="_blank">
+                                <area class="area" shape="rect" coords="480,321,720,642" alt="Blade Runner" href="https://www.youtube.com/watch?v=gCcx85zbxz4" target="_blank">
+                                <area class="area" shape="rect" coords="720,321,960,642" alt="Oblivion" href="https://www.youtube.com/watch?v=tx6_JMDFfWI" target="_blank">
+                            </map>
                         </div>
                     </div>
                 </div>
