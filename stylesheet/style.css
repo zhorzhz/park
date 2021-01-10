@@ -165,6 +165,11 @@ body{
     overflow: auto;
 }
 
+.new-attractions-box {
+    height: 100%;
+    overflow: auto;
+}
+
 .warning-box {
     height: 100%;
 }
@@ -235,6 +240,10 @@ body{
 }
 
 .details-title-box {
+    background-color: #2E151B;
+}
+
+.new-attractions-title-box {
     background-color: #2E151B;
 }
 
@@ -309,7 +318,7 @@ body{
 
 }
 
-.price-row-grey {
+.background-grey {
     background-color: #dedcdc;
 }
 
